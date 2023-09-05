@@ -1,0 +1,96 @@
+header {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  text-align: center; 
+}
+
+.header-link {
+  text-align: center; 
+  margin: 0; 
+  padding: 0; 
+  line-height: 1;
+}
+
+/* Optional: Center the text vertically within its container */
+.loggedin-user {
+  line-height: 1;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  height: 30px; /* Adjust the height as needed */
+  border: 2px solid green; /* Add a green border */
+  padding: 10px;
+  border-radius: 10px;
+}
+.NavBar {
+  display: flex;
+  justify-content: space-around; /* Distribute items evenly along the horizontal axis */
+  background-color: #f0f0f0;
+  padding: 10px;
+  flex-wrap: wrap; 
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;/* Allow items to wrap to the next row if needed */
+}
+
+.NavBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row if needed */
+}
+
+.NavBar li {
+  margin: 10px;
+}
+
+.NavBar a {
+  text-decoration: none;
+  padding: 10px 30px; /* Adjust button size */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.NavBar a:hover {
+  background-color: #0056b3; /* Hover background color */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+}
+
+article {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(166, 63, 63); 
+  border-radius: 10px;
+}
+
+.articles {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(74, 90, 168); 
+  border-radius: 10px;
+}
+
+.singleUser {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(74, 90, 168); 
+  border-radius: 10px;
+}
+
+.users {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(74, 90, 168); 
+  border-radius: 10px;
+}
