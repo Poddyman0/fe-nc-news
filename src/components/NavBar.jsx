@@ -6,16 +6,16 @@ export default function NavBar() {
     <div className="NavBar">
       <ul>
         <li>
-          <Link to={"/logIn"}>Home</Link>
+          <Link to={"/homepage"}>Home</Link>
         </li>
         <li>
-          <Link to={"/api/users"}>Users</Link>
+          <Link to={"/users"}>Users</Link>
         </li>
         <li>
-          <Link to={"/"}>Articles</Link>
+          <Link to={"/articles"}>All Articles</Link>
         </li>
         <li>
-          <Link to={"/api/articles/:article_id/comments"}>Comments</Link>
+          <Link to={"/articles/:article_id/comments"}>Comments</Link>
         </li>
       </ul>
     </div>
