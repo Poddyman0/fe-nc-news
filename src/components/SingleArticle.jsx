@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
-import ChangeVotes from "./ChangeVotes"
 
 export default function SingleArticle({article}) {
 const [anArticle, setAnArticle] = useState({})
@@ -24,7 +23,6 @@ useEffect(() => {
       <p>Topic: {anArticle.topic}</p>
       <p>Time Created: {anArticle.created_at}</p>
       <p>Votes: {anArticle.votes}</p>
-      <ChangeVotes />
       <p>Comment Count: {anArticle.comment_count}</p>
       <img className="articlePicture"
         src={anArticle.article_img_url}
