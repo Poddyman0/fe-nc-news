@@ -10,7 +10,6 @@ export default function ArticleCard({article}) {
       <p>Article ID: {article.article_id}</p>
       <p>Topic: {article.topic}</p>
       <p>Time Created: {article.created_at}</p>
-      <p>Votes: {article.votes}</p>
       <p>Comment Count: {article.comment_count}</p>
       <img className="articlePicture"
         src={article.article_img_url}
@@ -20,6 +19,7 @@ export default function ArticleCard({article}) {
       <Link to={`/articles/${article.article_id}`}>
       view only this article</Link>
       <br></br>
+      <p>Votes: {article.votes}</p>
     </article>
   );
 }

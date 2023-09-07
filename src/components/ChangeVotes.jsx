@@ -2,33 +2,41 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
-export default function ChangeVotes() {
-const [alterVotes, setAlterVotes] = useState({})
+export default function ChangeVotes(props) {
+  const {article_id} = useParams()  
+  const [alterVotes, setAlterVotes] = useState(0)
 
-const {article_id} = useParams()
+
 //optimistic rendering below
 
-const increaseVotes = (vote) => {
-    patchVotes(vote);
-    console.log(vote, "line 13")
+const increaseVotes = () => {
+  const newVotes = alterVotes + 1
+  setAlterVotes(newVotes);
+  patchVotes(newVotes)
 }
 //optimistic rendering below
-const decreaseVotes = (vote) => {
-    patchVotes(vote);
-    console.log(vote, "line 18")
+const decreaseVotes = () => {
+  const newVotes = alterVotes - 1
+  setAlterVotes(newVotes);
+    patchVotes(newVotes)
 }
 
-const patchVotes = (vote) => {
-    axios
-    .patch(`https://be-nc-news-tnfa.onrender.com/api/articles/${article_id}`)
-    .then({data})
-    console.log(data, "line 25")
-    setAlterVotes(data.article, { inc_votes : vote})
+const patchVotes = (newVotes) => {
+  axios
+    .patch(`https://be-nc-news-tnfa.onrender.com/api/articles/${article_id}`, { inc_votes : newVotes})
+    .then((response) => {
+    response.data.articles.votes
+    })
 }
   return (
     <>
-    <button onClick={increaseVotes(+1)}>Add vote</button>
-    <button onClick={decreaseVotes(-1)}>Subtract vote</button>
+      {props.votes + alterVotes}
+      <br>
+      </br>
+      <br>
+      </br>
+    <button onClick={increaseVotes}>Add vote</button>
+    <button onClick={decreaseVotes}>Subtract vote</button>
     </>
   );
 }

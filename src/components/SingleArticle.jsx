@@ -12,6 +12,7 @@ useEffect(() => {
         axios
           .get(`https://be-nc-news-tnfa.onrender.com/api/articles/${article_id}`)
           .then(({ data }) => {
+            console.log(data.articles.comment_count, "line 15 SA")
             setAnArticle (data.articles)
 
           });
@@ -23,8 +24,6 @@ useEffect(() => {
       <p>Article ID: {anArticle.article_id}</p>
       <p>Topic: {anArticle.topic}</p>
       <p>Time Created: {anArticle.created_at}</p>
-      <p>Votes: {anArticle.votes}</p>
-      <ChangeVotes />
       <p>Comment Count: {anArticle.comment_count}</p>
       <img className="articlePicture"
         src={anArticle.article_img_url}
@@ -33,8 +32,11 @@ useEffect(() => {
       <Link to={`/articles/${anArticle.article_id}/comments`}>
       view all comments for this article</Link>
       <br></br>
+      <p>Votes:       <ChangeVotes votes={anArticle.votes}/></p>
     </article>
   );
 }
+
+
 
 
