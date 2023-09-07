@@ -11,7 +11,7 @@ export default function Header({ currUser }) {
         Welcome to Northcoders news!
       </p>
       <section className="loggedin-user">
-          <p className="user_text">{currUser.username} is logged in </p>
+          <p className="user_text">{} is logged in </p>
       </section>
       <br></br>
       <Navbar />
