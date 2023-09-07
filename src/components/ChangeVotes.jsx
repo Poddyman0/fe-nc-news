@@ -27,6 +27,9 @@ const patchVotes = (newVotes) => {
     .then((response) => {
     response.data.articles.votes
     })
+    .catch((error) => {
+      console.error("Error patching votes:", error);
+    });
 }
   return (
     <>

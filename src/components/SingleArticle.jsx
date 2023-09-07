@@ -13,6 +13,7 @@ useEffect(() => {
           .get(`https://be-nc-news-tnfa.onrender.com/api/articles/${article_id}`)
           .then(({ data }) => {
             console.log(data.articles.comment_count, "line 15 SA")
+
             setAnArticle (data.articles)
 
           });

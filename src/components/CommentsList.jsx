@@ -3,6 +3,7 @@ import axios from "axios";
 import CommentCard from "./CommentCard";
 import {useParams} from "react-router-dom"
 import SingleArticle from "./SingleArticle"
+import AddComment from "./AddComment"
 
 export default function CommentsList () {
     const [commentsList, setCommentsList] = useState([])
@@ -21,10 +22,11 @@ export default function CommentsList () {
       <>
         <div className="singleArticleLeft">
             <SingleArticle/>
+            
         </div>
         <div className="commentsRight">
             <h1>comments:</h1>
-
+            <AddComment />
           {commentsList.map((comment) => {
             return <CommentCard key={comment.comment_id} comment={comment} />;
           })}
@@ -32,3 +34,5 @@ export default function CommentsList () {
       </>
       );
 }
+
+//<AddComment comment={comment}/>

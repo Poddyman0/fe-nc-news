@@ -123,6 +123,23 @@ article {
   border: 2px solid rgb(74, 90, 168);
   border-radius: 10px;
 }
+
+.commentForm {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(74, 90, 168);
+  border-radius: 10px;
+}
+
+.commentPreview {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(74, 90, 168);
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 768px) {
   header {
     padding: 5px;
