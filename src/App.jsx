@@ -7,7 +7,6 @@ import ArticlesList from "./components/ArticlesList";
 import UserList from "./components/UserList";
 import SingleArticle from "./components/SingleArticle";
 import SingleUser from "./components/SingleUser"
-import GetTopicsButton from "./components/GetTopicsButton"
 import Homepage from "./components/Homepage"
 import CommentsList from "./components/CommentsList"
 
@@ -18,8 +17,7 @@ function App() {
       <Header currUser={currUser}></Header>
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/topics" element={<GetTopicsButton />}></Route>
-        <Route path="/articles" element={<ArticlesList />}></Route>
+        <Route path="/articles/topics/:topic" element={<ArticlesList />}></Route>
         <Route path="/articles/:article_id" element={<SingleArticle />}></Route>
         <Route path="/articles/:article_id/comments" element={<CommentsList />}></Route>
         <Route path="/users" element={<UserList />}></Route>

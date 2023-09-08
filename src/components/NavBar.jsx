@@ -12,7 +12,7 @@ export default function NavBar() {
           <Link to={"/users"}>Users</Link>
         </li>
         <li>
-          <Link to={"/articles"}>All Articles</Link>
+          <Link to={"/articles/topics/:topic"}>All Articles</Link>
         </li>
         <li>
           <Link to={"/articles/:article_id/comments"}>Comments</Link>
