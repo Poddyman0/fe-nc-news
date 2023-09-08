@@ -11,12 +11,15 @@ import Homepage from "./components/Homepage"
 import CommentsList from "./components/CommentsList"
 
 function App() {
-  const [currUser, setCurrUser] = useState("tickle122");
+  const [currUser, setCurrUser] = useState("");
+  console.log(currUser, "app line 15")
+
   return (
     <>
       <Header currUser={currUser}></Header>
       <Routes>
-        <Route path="/" element={<Homepage />}></Route>
+        <Route path="/homepage" element={<Homepage setCurrUser={setCurrUser}/>}></Route>
+        <Route path="/" element={<Homepage setCurrUser={setCurrUser}/>}></Route>
         <Route path="/articles/topics/:topic" element={<ArticlesList />}></Route>
         <Route path="/articles/:article_id" element={<SingleArticle />}></Route>
         <Route path="/articles/:article_id/comments" element={<CommentsList />}></Route>

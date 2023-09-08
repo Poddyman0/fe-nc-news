@@ -24,13 +24,11 @@ export default function topicsForm() {
     e.preventDefault();
     getTopics(topicsForm);
   };
-  console.log(topicsForm)
 
 useEffect(() => {
   axios
-    .get("https://be-nc-news-tnfa.onrender.com/api/articles")
+    .get("https://be-nc-news-tnfa.onrender.com/api/articles/")
     .then(({ data }) => {
-      console.log(data.articles)
       setArticlesList(data.articles);
     });
 }, []);

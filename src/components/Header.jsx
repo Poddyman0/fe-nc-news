@@ -1,17 +1,15 @@
 import React from "react";
 import Navbar from "./NavBar";
-import { Link } from "react-router-dom";
 
 
-export default function Header({ currUser }) {
+export default function Header({currUser}) {
+  
   return (
     <header>
-      <Link to={"/"}><h1 className="header-link">Northcoders News</h1></Link>
-      <p>
-        Welcome to Northcoders news!
-      </p>
+      <h1 className="header-link">Northcoders News</h1>
+      <br></br>
       <section className="loggedin-user">
-          <p className="user_text">{} is logged in </p>
+        <p className="user_text">{`${currUser} is logged in`}</p>
       </section>
       <br></br>
       <Navbar />

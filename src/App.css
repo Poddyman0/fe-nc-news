@@ -103,6 +103,14 @@ article {
   border-radius: 10px;
 }
 
+.signInForm {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid rgb(74, 90, 168);
+  border-radius: 10px;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
