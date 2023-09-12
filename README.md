@@ -42,7 +42,3 @@ npm start
 ```
 
 ## Built using a [React](https://reactjs.org/) front-end - https://reactjs.org/
-
-## Author Information:
-
-**John Butcher** - _Find my other projects on github at: 'justJackjon'_
