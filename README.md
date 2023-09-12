@@ -1,6 +1,7 @@
 # **Northcoders News (Front-end)**
 
 **Live version hosted by ... at 
+**Link to back end is available [here](https://github.com/Poddyman0/be-nc-news-portfolio-project).
 
 Northcoders News (Front-end) is a **React application** built as the counterpart to the backend northcoders news (BE-NC-news) accessible on github. Many of React's newer features such as hooks, function component memoization, and more have been employed throughout, utilising function components over class components throughout the codebase in order to reduce overhead for the transpiler. The project relies upon React's Context API for application state management.
 
