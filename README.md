@@ -1,5 +1,7 @@
 # **Northcoders News (Front-end)**
 
+FE-NC-News is a React-based front-end for a social news platform, similar to Reddit. It connects to a back-end API to display, rate, and discuss articles. Skills and Technologies: React for UI, React Router for navigation, Axios for API requests, Tailwind CSS for styling, Vite for development, ESLint for code quality, Git for version control, and JavaScript (ES6+). HTML & CSS were also used. Project Description: FE-NC-News was part of the Northcoders News project to consolidate my understanding of building a full CRUD application. It allowed users to browse articles by topic, upvote/downvote, comment, and submit articles. Project Overview: The app included key features like article display, rating, comments, and topic filtering, using React Router for navigation. I used React for state management, Axios for API interaction, and Tailwind for UI. I focused on recreating a Reddit-like experience with Northcoders-specific content. Error handling and dynamic updates for upvotes and comments were also implemented.
+
 **Live version hosted by ... at 
 **Link to back end is available [here](https://github.com/Poddyman0/be-nc-news-portfolio-project).
 
